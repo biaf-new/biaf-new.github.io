@@ -1,0 +1,230 @@
+<HTML>
+<head>
+	<TITLE>BIAF -   Jagriti, Whitefield on 09 Sep 2012</TITLE>
+	<META name="generator" content="Adobe Photoshop(R) CS Web Photo Gallery">
+	<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="images/galleryStyle.css" rel="stylesheet" type="text/css">
+	<script language="javascript">
+	<!--
+	
+	var feedback = new Object();
+	var tabShowing = null;
+	
+	function showTab() {
+		if (tabShowing != null && tabShowing.toLowerCase() == "info") {
+			
+			top.TopFrame.CSAction(new Array(/*CMP*/'BAE16A9A0',/*CMP*/'BAE16AA81'));return top.TopFrame.CSClickReturn();
+		
+		} else if (tabShowing != null && tabShowing.toLowerCase() == "feedback") {
+
+			top.TopFrame.CSAction(new Array(/*CMP*/'BAE16AB52',/*CMP*/'BAE16ABF3'));return top.TopFrame.CSClickReturn();		
+		}
+	}
+	
+	function updateFeedback(picName) {
+		
+		if (feedback[picName]) {
+			
+			top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value = feedback[picName].comments;
+		
+			top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked = feedback[picName].approved;
+		
+			top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked = feedback[picName].other;
+			
+			top.TopFrame.document.images["saved"].src = "../images/saved.gif";
+		}
+	}
+	
+	function addComment(picName) {
+		feedback[picName] = new Object();
+		
+		feedback[picName].comments = top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value;
+		
+		feedback[picName].approved = top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked ? true : false;
+		
+		feedback[picName].other = top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked ? true : false;
+		
+		top.TopFrame.document.images["saved"].src = "../images/saved.gif";
+	}
+	
+	function removeFeedback(picName) {
+		//Make sure there is feedback to remove
+		if (!(top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value == ""
+			&& top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked == false
+			&& top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked == false)) {
+			if (confirm("Are you sure you want to remove feedback on this image?")) {
+				delete feedback[picName];
+				
+				top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value = "";
+			
+				top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked = false;
+			
+				top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked = false;
+				
+				top.TopFrame.document.images["saved"].src = "../images/spacer.gif";
+			}
+		}
+	}
+	
+	function sendFeedback(picName) {
+		checkForUnSavedChanges(picName);
+
+		var prefix = "mailto:?";
+		var name = null;
+		name = prompt("Enter Your Name:", "Your Name");
+		
+		if (name) {
+			prefix += "subject=" + escape("Feedback from " + name);
+			prefix += "&body=";
+			var str = ""
+			
+			for (var i in feedback) {
+				
+				str += i + " ~~ \n";
+				str += (feedback[i].approved == true) ? "Approved ~~ \n" : "";
+				str += (feedback[i].other == true) ? "Other ~~ \n" : "";
+				str += (feedback[i].comments != "") ? ("\nComments:\n" + feedback[i].comments + " ~~ \n") : "";
+				str += "____________________________________________\n\n";
+			
+			}
+			
+			str = escape(str);
+			location.href = prefix + str;
+		}	
+	}
+	
+	function setAsUnsaved() {
+		top.TopFrame.document.images["saved"].src = "../images/spacer.gif";
+	}
+	
+	function checkForUnSavedChanges(picName) {
+		
+		var unsavedChanges = false;
+		
+		if ((top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value != "" && !feedback[picName]) 
+			|| (feedback[picName] && feedback[picName].comments != top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value)) {
+			unsavedChanges = true;
+		} else if ((top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked != false && !feedback[picName]) 
+					|| (feedback[picName] && feedback[picName].approved != top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked)) {
+			unsavedChanges = true;
+		} else if ((top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked != false && !feedback[picName]) 
+					|| (feedback[picName] && feedback[picName].other != top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked)) {
+			unsavedChanges = true;
+		}		
+		
+		if (unsavedChanges) {
+			//Uncomment if auto-saving is not desired.
+			//if (confirm("There is unsaved feedback for this image. Would you like to save it?")) {
+				addComment(picName);
+			//}
+		}
+	}
+	//-->
+	</script>
+</head>
+<body bgcolor="#CCCCCC" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+	<div id="thumbnail">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">			
+<!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Chetana.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Chetana.html" target="TopFrame"><img src="thumbnails/Chetana.jpg"   border=1 alt="Chetana"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Chetana.html" target="TopFrame">Chetana</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Dr. Suma Sudhindra &amp; Hari Chetana Troupe.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Dr.%20Suma%20Sudhindra%20%26%20Hari%20Chetana%20Troupe.html" target="TopFrame"><img src="thumbnails/Dr.%20Suma%20Sudhindra%20%26%20Hari%20Chetana%20Troupe.jpg"   border=1 alt="Dr. Suma Sudhindra &amp; Hari Chetana Troupe"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Dr.%20Suma%20Sudhindra%20%26%20Hari%20Chetana%20Troupe.html" target="TopFrame">Dr. Suma Sudhindra &amp; Hari Chetana Troupe</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Hari.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Hari.html" target="TopFrame"><img src="thumbnails/Hari.jpg"   border=1 alt="Hari"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Hari.html" target="TopFrame">Hari</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Hari &amp; Chetana.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Hari%20%26%20Chetana.html" target="TopFrame"><img src="thumbnails/Hari%20%26%20Chetana.jpg"   border=1 alt="Hari &amp; Chetana"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Hari%20%26%20Chetana.html" target="TopFrame">Hari &amp; Chetana</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Hari &amp; Chetana 1.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Hari%20%26%20Chetana%201.html" target="TopFrame"><img src="thumbnails/Hari%20%26%20Chetana%201.jpg"   border=1 alt="Hari &amp; Chetana 1"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Hari%20%26%20Chetana%201.html" target="TopFrame">Hari &amp; Chetana</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Hari Chetana &amp; Troupe.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Hari%20Chetana%20%26%20Troupe.html" target="TopFrame"><img src="thumbnails/Hari%20Chetana%20%26%20Troupe.jpg"   border=1 alt="Hari Chetana &amp; Troupe"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Hari%20Chetana%20%26%20Troupe.html" target="TopFrame">Hari Chetana &amp; Troupe</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Hari Chetana Troupe.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Hari%20Chetana%20Troupe.html" target="TopFrame"><img src="thumbnails/Hari%20Chetana%20Troupe.jpg"   border=1 alt="Hari Chetana Troupe"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Hari%20Chetana%20Troupe.html" target="TopFrame">Hari Chetana Troupe</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Hari Chetana Troupe 1.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Hari%20Chetana%20Troupe%201.html" target="TopFrame"><img src="thumbnails/Hari%20Chetana%20Troupe%201.jpg"   border=1 alt="Hari Chetana Troupe 1"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Hari%20Chetana%20Troupe%201.html" target="TopFrame">Hari Chetana Troupe</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Kamila Kama Jezierska &amp; Abhilash Ningappa.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa.html" target="TopFrame"><img src="thumbnails/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa.jpg"   border=1 alt="Kamila Kama Jezierska &amp; Abhilash Ningappa"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa.html" target="TopFrame">Kamila Kama Jezierska &amp; Abhilash Ningappa</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Kamila Kama Jezierska &amp; Abhilash Ningappa 1.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa%201.html" target="TopFrame"><img src="thumbnails/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa%201.jpg"   border=1 alt="Kamila Kama Jezierska &amp; Abhilash Ningappa 1"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa%201.html" target="TopFrame">Kamila Kama Jezierska &amp; Abhilash Ningappa </a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='Kamila Kama Jezierska &amp; Abhilash Ningappa 2.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa%202.html" target="TopFrame"><img src="thumbnails/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa%202.jpg"   border=1 alt="Kamila Kama Jezierska &amp; Abhilash Ningappa 2"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Kamila%20Kama%20Jezierska%20%26%20Abhilash%20Ningappa%202.html" target="TopFrame">Kamila Kama Jezierska &amp; Abhilash Ningappa </a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr>		</table>
+	</div>
+</BODY>
+</HTML>

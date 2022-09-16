@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bengaluru International Arts Festival</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+
+<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6PngFix.js" ></script>
+<![endif]-->  
+
+<script type="text/javascript" src="Scripts/swfobject_modified.js"></script>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.js"></script>
+<script type="text/javascript" src="js/jquery.functions.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {	
+
+  //Get all the LI from the #tabMenu UL
+  $('#tabMenu > li').click(function(){
+        
+    //remove the selected class from all LI    
+    $('#tabMenu > li').removeClass('selected');
+    
+    //Reassign the LI
+    $(this).addClass('selected');
+    
+    //Hide all the DIV in .boxBody
+    $('.boxBody div').slideUp('1500');
+    
+    //Look for the right DIV in boxBody according to the Navigation UL index, therefore, the arrangement is very important.
+    $('.boxBody div:eq(' + $('#tabMenu > li').index(this) + ')').slideDown('1500');
+    
+  }).mouseover(function() {
+
+    //Add and remove class, Personally I dont think this is the right way to do it, anyone please suggest    
+    $(this).addClass('mouseover');
+    $(this).removeClass('mouseout2');   
+    
+  }).mouseout(function() {
+    
+    //Add and remove class
+    $(this).addClass('mouseout2');
+    $(this).removeClass('mouseover');    
+    
+  });
+
+  //Mouseover with animate Effect for Category menu list
+  $('.boxBody #category li').mouseover(function() {
+
+    //Change background color and animate the padding
+    $(this).css('backgroundColor','#888');
+    $(this).children().animate({paddingLeft:"20px"}, {queue:false, duration:300});
+  }).mouseout2(function() {
+    
+    //Change background color and animate the padding
+    $(this).css('backgroundColor','');
+    $(this).children().animate({paddingLeft:"0"}, {queue:false, duration:300});
+  });  
+	
+  //Mouseover effect for Posts, Comments, Famous Posts and Random Posts menu list.
+  $('.boxBody li').click(function(){
+    window.location = $(this).find("a").attr("href");
+  }).mouseover(function() {
+    $(this).css('backgroundColor','#888');
+  }).mouseout2(function() {
+    $(this).css('backgroundColor','');
+  });  	
+	
+});
+
+</script>
+<style type="text/css">
+<!--
+.style8 {font-size: 16px; color: #C40000;}
+.style9 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style10 {color: #FFFFFF}
+.style12 {
+	font-size: 20px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<div id="main-container">
+  <div id="main-area">
+    		<div id="topmenu-area"><!--start topmenu-area-->
+					
+                <div class="top_rgt">
+                    
+						 <ul>
+
+							
+							<li class="contactus"></li>
+				  </ul>
+						  <div class="search">
+							<form action="" class="enter">
+							  <input type="text" class="searchbtn" value="SEARCH "  onfocus="if(this.value == 'SEARCH ')                                      this.value = ''"    onblur= "if(this.value == '') this.value = 'SEARCH'" />
+		
+							</form>
+						  </div>
+					 </div>
+
+    		</div><!--end topmenu-area-->
+	        <div class="logo_area">
+	          <!--start logo_area-->
+	          <div id="menu-area">
+                <ul>
+                  <li class="home"><a href="index.html" target="_parent"  class="active"><strong>HOME</strong></a></li>
+                  <li class="aboutus"><a href="AboutUs.html" target="_parent"><strong>ABOUT US</strong></a></li>
+                  <li class="music"><a href="Schedule.html" target="_parent"><strong>SCHEDULE</strong></a></li>
+                  <li class="gallery"><a href="Artists.html" target="_parent"><strong>ARTISTS</strong></a></li>
+                  <li class="thenews"><strong><a href="Advisoryboard.html" target="_parent">ADVISORY BOARD</a></strong></li>
+                    <li class="thenews"><a href="team.html" target="_parent" ><strong>TEAM</strong></a></li>
+                  <li class="thenews"><a href="currentevents2.html" target="_parent" ><strong>CURRENT EVENTS</strong></a></li>
+                 <!-- <li class="thenews"><a href="Gallery.html" target="_parent"><strong>GALLERY</strong></a></li>-->
+                 <li class="thenews"><strong><a href="PastEvents.html" target="_parent">PAST EVENTS</a></strong></li>
+                 <li class="thenews"><strong><a href="Contact.html" target="_parent">CONTACT US</a></strong></li>
+               <li class="blog"><a href="Blog.html" target="_parent"><strong>BLOG</strong></a></li>
+                </ul>
+              </div>
+    </div>
+    <!--end logo_area-->
+			
+<div id="siteContent"><!--start siteContent-->
+
+                <div id="leftContent">
+                  
+                         <!-- slider -->					
+			<div class="sub-header">
+			
+				<div id="slider">
+					<ul id="slides">
+						<li style="position: absolute; top: 0px; left: 0px; display: list-item; z-index: 4;"><a href="#"><a href="#"><img src="images/slide_sample_1.jpg" alt="" /></a></a><span class="slide_caption">Bengaluru International Arts Festival</span></li>
+					  <li style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3;"> <a href="#"> <img src="images/slide_sample_2.jpg" alt="" /></a><span class="slide_caption">Bengaluru International Arts Festival</span></li>
+						<li style="position: absolute; top: 0px; left: 0px; display: none; z-index: 2;"> <a href="#"> <img src="images/slide_sample_3.JPG" alt="" /></a><span class="slide_caption">Bengaluru International Arts Festival</span></li>
+					</ul>
+			  <div id="slider_copy" class="clearfix">
+						<div style="display: block;" id="project_caption"></div>
+						<!--<div id="slide_navigation" class="clearfix"></div>-->
+					</div>
+
+				</div>
+			
+			</div>
+			<!-- // slider -->               
+					<div class="box">
+                    <ul id="tabMenu">
+                      <li class="event selected"><!----></li>
+                      <li class="gig"><!----></li>
+                      <li class="clubgallery"><!----></li>
+                    </ul>
+
+                    <div class="boxTop"><!----></div>
+                    
+                    <div class="boxBody">
+                      
+                      <div id="event" class="show1">
+                                <span class="polaroid">
+                                <img src="images/gallery1.jpg" class="pic" width="105" height="85" alt="Gallery" />
+                               </span>
+                        <span class="eventer">
+                                        <label>Our Aim:</label>
+                        <small>To create a platform for artists from within the country and from outside to be able to interact, collaborate and perform together. This will help bring out the essence of a co-existence through Harmony.<br /><br />
+
+To build and regenerate links between society and the artists through public-private partnerships.
+
+To help needy artists by donating a part of the funds to ‘Arogyadhara’ an artist’s welfare fund and health helpline to the needy artists.<br /><br />
+
+To create environmental awareness and do our bit in contributing towards our Garden City 
+
+To attract Artists, Art Lovers, Business groups and Tourists… thus creating a common platform for artists and sponsors to interact , hence opening up new avenues for branding / promotional opportunities.<br /><a href="#" title="read more">Read More ></a></small>                                        </span>
+                                        
+                                        <span class="polaroid">
+                                <img src="images/gallery2.jpg" class="pic" width="105" height="85" alt="Gallery" />
+                               </span><span class="polaroid">
+                                <img src="images/artistshtml/New folder/4.jpg" class="pic" width="105" height="85" alt="Gallery" />
+                               </span></div>  
+                      
+                      <div id="gig" class="show2">
+
+                         
+                                        
+                                        <span class="polaroid">
+                                <img src="images/gallery2.jpg" class="pic" width="105" height="85" alt="Gallery" />
+                               </span>
+                                        <span class="eventer">
+                                        <label>Objectives of BIAF :</label>
+                                       
+                                        <small>It has been a grand success for  the past 4 years  and the Ministry Of culture has considered this as one of the top 10 major festivals of the country.<br />•	To stage programs at new areas of the expanding Bangalore City. <br />
+•	To carefully handpick artists performing in BIAF and to prefer thought provoking themes for the betterment in all tracks. <br />•	To provide world class technical support and media - just as Bangalore which is now a global village. 
+ <a href="#" title="read more">Read More ></a></small>
+
+                                        </span>
+                                        
+                                        <span class="polaroid">
+                                <img src="images/gallery1.jpg" class="pic" width="105" height="85" alt="Gallery" />
+                               </span>
+                                        <span class="eventer">
+                                        <label>2013 Special : </label>
+                                       
+                                        <small>BIAF is now putting its right foot forward and adding yet another responsibility on its shoulders -- " Clean India Campaign" this includes our already existing "Go Green Campaign".  BIAF is keen in having our city clean for local residents, tourists and expatriates.  This is an initiation by the Ministry of Tourism.  <a href="#" title="read more">Read More ></a></small>
+
+                                        </span>
+                                         <span class="polaroid">
+                                <img src="images/gallery3.jpg" class="pic" width="105" height="85" alt="Gallery" />
+                               </span>
+                                       
+                                    
+                      </div>
+                      
+                      <div id="clubgallery" class="show3">
+                  
+                           
+								<a href="#" title=""><img src="images/1.jpg" alt="" /></a>
+								<a href="#" title=""><img src="images/2.jpg" alt="" /></a>
+								<a href="#" title=""><img src="images/3.jpg" alt="" /></a>
+								<a href="#" title=""><img src="images/4.jpg" alt=""/></a>
+								<a href="#" title=""><img src="images/5.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/6.jpg"  alt="" /></a>
+
+								<a href="#" title=""><img src="images/7.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/8.jpg"  alt=""/></a>
+                                <a href="#" title=""><img src="images/9.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/10.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/11.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/12.jpg"  alt=""/></a>
+                                <a href="#" title=""><img src="images/13.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/14.jpg"  alt=""/></a>
+                                <a href="#" title=""><img src="images/15.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/16.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/17.jpg"  alt="" /></a>
+								<a href="#" title=""><img src="images/18.jpg"  alt=""/></a>
+                      </div>
+
+                    </div>
+                    <div class="boxBottom"><!----></div>
+                    
+                    </div>
+                    <div id="subscribe"> <table width="322" height="40" border="1">
+                        <tr>
+                          <td width="312"><a href="Schedule.html" class="style9 style12">CLICK HERE FOR SCHEDULES</a></td>
+                        </tr>
+                      </table>
+                     
+				  </div>
+
+
+
+
+                                        
+                                        
+      </div>
+                                    
+                                    <div id="rightContent">
+                                    <div class="Logo">
+                                    
+                                    </div>
+                              <div class="sponsors">
+                                                <div>
+                                               
+                                               <!--   <p><img border="0" src="images/sponsorors/rs/image001.jpg" width="53" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/Idea-Logo-.jpg" width="36" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/iccrlogo2.jpg" width="50" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/19Academy%20of%20Music.jpg" width="78" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/15Sathya.jpg" width="54" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/OPUS.jpg" width="56" height="34" style="border: 1px solid #C0C0C0"></p>
+                                                  <p><img border="0" src="images/sponsorors/rs/05Ministry%20of%20Cultural.jpg" width="77" height="36" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/04HDFC.jpg" width="45" height="36" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/03Sangeet%20Natak.jpg" width="70" height="36" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/01BBMP.jpg" width="79" height="36" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/logo%20copy.jpg" width="58" height="36" style="border: 1px solid #C0C0C0"></p>--><img src="images/sponsorors/footer111.jpg" width="347" height="84"/>                                </div>
+
+                                      </div>
+										
+										<div class="latestNews_box"><!--start latestNews_box-->
+											<div class="latest_bg"><div class="latest_top"><div class="latest_btm">
+												<div class="content_latestNews_box"><!--start content_latestNews_box-->
+													
+													<p class="style8"><a href="Schedule.html" class="style9">CLICK HERE FOR SCHEDULES</a></p>
+                                                    <hr />
+                                                    <!--end relaunce-->
+                                                    <!--end relaunce-->
+<div class="relaunce"><!--start relaunce-->
+														<div class="relaunceLFT"><!--start relaunceLFT-->
+															<label>20</label>
+															<span>SEP</span>
+														</div><!--start relaunceLFT-->
+														<div class="relaunceRGT"><!--start relaunceRGT-->
+
+															<strong>Chowdiah memorial hall</strong>
+															<span>	
+20-09-14 Chowdiah Meorial Hall, Dr.M.Balamuali Krishna
+ </span>
+															<p>palace road,Manikyavelu Mansion</p>
+															</hr>
+														    <hr />
+														</div>
+														<!--end relaunceRGT-->
+												  </div><!--end relaunce-->
+<div class="relaunce"><!--start relaunce-->
+														<div class="relaunceLFT"><!--start relaunceLFT-->
+															<label>21</label>
+															<span>Sep</span>
+
+														</div>
+														<!--start relaunceLFT-->
+					<div class="relaunceRGT"><!--start relaunceRGT-->
+															<strong>Chowdiah memorial hall</strong>
+															<span> Shama Krishna </span>
+															<p>
+															    6.30pm onwards</p>
+						                                    <p><a href="Schedule.html">Read More ></a></p>
+                    </div>
+														<!--end relaunceRGT-->
+												  </div><!--end relaunce-->
+                                                  
+                                                  
+                                                 <h1> Passes and Donations </h1>
+
+                                                 <p><a href="http://www.buzzintown.com/bangalore/events/bengaluru-international-arts-festival-2014/id--927883.html" target="_blank"><img src="images/click.JPG"/></a>                                               
+                                                     <ul>                                          
+                                                  <li> Step 1: click DONATE</li>
+<li>                                                   Step 2: Fill your Name, Email ID and Phone Number (Assurance of no mis-use)</li>
+<li>                                                   Step 3: Choose mode of payment (Credit/debit card or Net Banking)</li>
+                                                   </ul>
+                                                
+												</div><!--end content_latestNews_box-->
+											</div></div></div>
+										</div><!--end latestNews_box-->
+                          </div>
+                          
+                        </div><!--end siteContent-->
+                        
+  		
+        
+    </div>   
+          
+</div>
+<div class="footer">
+	<div id="cont_footer"><!--start cont_footer-->
+	  <!--end cont_footer_top-->
+      <div id="foooter_low" style="width: 950px; height: 349px"> &nbsp;
+          <p><b><font size="5" color="#000000">OUR SPONSORS</font></b><a href="http://celebrityportal.in"><img src="images/sponsorors/footer.jpg" width="943" height="250" style="border: 2px solid #B95C00" /></a></p>
+        <div class="txt_ftr_low"><font color="#FFFF99">Designed and Developed by 
+			</font> <span class="style10"><a href="http://www.celebrityportal.in">
+			<font color="#FFFF99">celebrityportal.in</font></a></span><font color="#FFFF99"> in association with</font><a href="http://www.bcstech.in"><font color="#FFFF99"> www.bcstech.in</font></a></div>
+  <div class="foooter_low_rgt">
+            <ul>
+              <li><a href="#" title="Facebook" class="pic03">Face book</a></li>
+              <li><a href="#" title="reddit" class="pic04">reddit</a></li>
+            </ul>
+        </div>
+      </div>
+  </div>
+</div>    
+
+</body>
+</html>
+<!-- 69f91df138d3f3beb5fd60e43358cdb9 -->

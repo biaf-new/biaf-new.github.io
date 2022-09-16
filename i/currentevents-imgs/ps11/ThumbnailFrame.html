@@ -1,0 +1,239 @@
+<HTML>
+<head>
+	<TITLE>BIAF - 15 Sep 2012, Cosmopolitan Club, Jayanagar</TITLE>
+	<META name="generator" content="Adobe Photoshop(R) CS Web Photo Gallery">
+	<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="images/galleryStyle.css" rel="stylesheet" type="text/css">
+	<script language="javascript">
+	<!--
+	
+	var feedback = new Object();
+	var tabShowing = null;
+	
+	function showTab() {
+		if (tabShowing != null && tabShowing.toLowerCase() == "info") {
+			
+			top.TopFrame.CSAction(new Array(/*CMP*/'BAE16A9A0',/*CMP*/'BAE16AA81'));return top.TopFrame.CSClickReturn();
+		
+		} else if (tabShowing != null && tabShowing.toLowerCase() == "feedback") {
+
+			top.TopFrame.CSAction(new Array(/*CMP*/'BAE16AB52',/*CMP*/'BAE16ABF3'));return top.TopFrame.CSClickReturn();		
+		}
+	}
+	
+	function updateFeedback(picName) {
+		
+		if (feedback[picName]) {
+			
+			top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value = feedback[picName].comments;
+		
+			top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked = feedback[picName].approved;
+		
+			top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked = feedback[picName].other;
+			
+			top.TopFrame.document.images["saved"].src = "../images/saved.gif";
+		}
+	}
+	
+	function addComment(picName) {
+		feedback[picName] = new Object();
+		
+		feedback[picName].comments = top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value;
+		
+		feedback[picName].approved = top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked ? true : false;
+		
+		feedback[picName].other = top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked ? true : false;
+		
+		top.TopFrame.document.images["saved"].src = "../images/saved.gif";
+	}
+	
+	function removeFeedback(picName) {
+		//Make sure there is feedback to remove
+		if (!(top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value == ""
+			&& top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked == false
+			&& top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked == false)) {
+			if (confirm("Are you sure you want to remove feedback on this image?")) {
+				delete feedback[picName];
+				
+				top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value = "";
+			
+				top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked = false;
+			
+				top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked = false;
+				
+				top.TopFrame.document.images["saved"].src = "../images/spacer.gif";
+			}
+		}
+	}
+	
+	function sendFeedback(picName) {
+		checkForUnSavedChanges(picName);
+
+		var prefix = "mailto:?";
+		var name = null;
+		name = prompt("Enter Your Name:", "Your Name");
+		
+		if (name) {
+			prefix += "subject=" + escape("Feedback from " + name);
+			prefix += "&body=";
+			var str = ""
+			
+			for (var i in feedback) {
+				
+				str += i + " ~~ \n";
+				str += (feedback[i].approved == true) ? "Approved ~~ \n" : "";
+				str += (feedback[i].other == true) ? "Other ~~ \n" : "";
+				str += (feedback[i].comments != "") ? ("\nComments:\n" + feedback[i].comments + " ~~ \n") : "";
+				str += "____________________________________________\n\n";
+			
+			}
+			
+			str = escape(str);
+			location.href = prefix + str;
+		}	
+	}
+	
+	function setAsUnsaved() {
+		top.TopFrame.document.images["saved"].src = "../images/spacer.gif";
+	}
+	
+	function checkForUnSavedChanges(picName) {
+		
+		var unsavedChanges = false;
+		
+		if ((top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value != "" && !feedback[picName]) 
+			|| (feedback[picName] && feedback[picName].comments != top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value)) {
+			unsavedChanges = true;
+		} else if ((top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked != false && !feedback[picName]) 
+					|| (feedback[picName] && feedback[picName].approved != top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked)) {
+			unsavedChanges = true;
+		} else if ((top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked != false && !feedback[picName]) 
+					|| (feedback[picName] && feedback[picName].other != top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked)) {
+			unsavedChanges = true;
+		}		
+		
+		if (unsavedChanges) {
+			//Uncomment if auto-saving is not desired.
+			//if (confirm("There is unsaved feedback for this image. Would you like to save it?")) {
+				addComment(picName);
+			//}
+		}
+	}
+	//-->
+	</script>
+</head>
+<body bgcolor="#CCCCCC" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+	<div id="thumbnail">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">			
+<!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/African%20Dance.html" target="TopFrame"><img src="thumbnails/African%20Dance.jpg"   border=1 alt="African Dance"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/African%20Dance.html" target="TopFrame"></a></div><div class="date">		African Dance</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Chindu%20Yakshaganam%201.html" target="TopFrame"><img src="thumbnails/Chindu%20Yakshaganam%201.jpg"   border=1 alt="Chindu Yakshaganam 1"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Chindu%20Yakshaganam%201.html" target="TopFrame"></a></div><div class="date">		Chindu Yakshaganam 1</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Chindu%20Yakshaganam%20group%20with%20Mr.%20R.Ashoka%2C%20Deputy%20Chief%20Minister%20of%20Karnataka.html" target="TopFrame"><img src="thumbnails/Chindu%20Yakshaganam%20group%20with%20Mr.%20R.Ashoka%2C%20Deputy%20Chief%20Minister%20of%20Karnataka.jpg"   border=1 alt="Chindu Yakshaganam group with Mr. R.Ashoka, Deputy Chief Minister of Karnataka"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Chindu%20Yakshaganam%20group%20with%20Mr.%20R.Ashoka%2C%20Deputy%20Chief%20Minister%20of%20Karnataka.html" target="TopFrame"></a></div><div class="date">		Chindu Yakshaganam group with Mr. R.Ashoka, Deputy Chief Minister of 		Karnataka</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Dhol%20Cholom.html" target="TopFrame"><img src="thumbnails/Dhol%20Cholom.jpg"   border=1 alt="Dhol Cholom"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Dhol%20Cholom.html" target="TopFrame"></a></div><div class="date">		Dhol Cholom</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Dr.%20Sanjay%20Shantaram%20%26%20troupe.html" target="TopFrame"><img src="thumbnails/Dr.%20Sanjay%20Shantaram%20%26%20troupe.jpg"   border=1 alt="Dr. Sanjay Shantaram &amp; troupe"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Dr.%20Sanjay%20Shantaram%20%26%20troupe.html" target="TopFrame">		Dr. Sanjay Shantaram &amp; troupe</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Manipuri%20Basant%20Raas.html" target="TopFrame"><img src="thumbnails/Manipuri%20Basant%20Raas.jpg"   border=1 alt="Manipuri Basant Raas"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="date">		Manipuri Basant Raas</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Meernanda%20Bharthakur.html" target="TopFrame"><img src="thumbnails/Meernanda%20Bharthakur.jpg"   border=1 alt="Meernanda Bharthakur"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Meernanda%20Bharthakur.html" target="TopFrame"></a></div><div class="date">		Meernanda Bharthakur</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Nepali%20Dance.html" target="TopFrame"><img src="thumbnails/Nepali%20Dance.jpg"   border=1 alt="Nepali Dance"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Nepali%20Dance.html" target="TopFrame"></a></div><div class="date">		Nepali Dance</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Odisha%20-%20dhalkai.html" target="TopFrame"><img src="thumbnails/Odisha%20-%20dhalkai.jpg"   border=1 alt="Odisha - dhalkai"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Odisha%20-%20dhalkai.html" target="TopFrame"></a></div><div class="date">		Odisha - dhalkai</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Pung%20Cholom.html" target="TopFrame"><img src="thumbnails/Pung%20Cholom.jpg"   border=1 alt="Pung Cholom"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Pung%20Cholom.html" target="TopFrame"></a></div><div class="date">		Pung Cholom</div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Shivapriya%205.html" target="TopFrame"><img src="thumbnails/Shivapriya%205.jpg"   border=1 alt="Shivapriya 5"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Shivapriya%205.html" target="TopFrame">		Shivapriya 5</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onmouseover="window.status='';  return true;"  onmouseout="window.status='';  return true;" href="pages/Srilankan%20dance.html" target="TopFrame"><img src="thumbnails/Srilankan%20dance.jpg"   border=1 alt="Srilankan dance"></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Srilankan%20dance.html" target="TopFrame">		Srilankan dance</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr>		</table>
+	</div>
+</BODY>
+</HTML>

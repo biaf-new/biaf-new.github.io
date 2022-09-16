@@ -1,0 +1,111 @@
+<gallery
+base = ""
+background = "#FFFFFF"
+banner = "#F0F0F0"
+text = "#000000"
+link = "#0000FF"
+alink = "#FF0000"
+vlink = "#800080"
+date = "">
+	<sitename>Bangaluru International Art Festival</sitename>
+	<photographer></photographer>
+	<contactinfo></contactinfo>
+	<email></email>
+	<security><![CDATA[]]> </security>
+
+<banner font = "Arial" fontsize = "3" color =  "#F0F0F0"> </banner>
+<thumbnail base ="thumbnails/" font = "Arial" fontsize = "4" color = "#F0F0F0" border = "1" rows = "3" col = "5"> </thumbnail> 
+<large base ="images/" font = "Arial" fontsize = "3" color = "#F0F0F0" border = "1"> </large>
+<images id = "images">
+
+<image
+path = "Dr. C.N.Ashwathnarayan & Mr. Shiva Ganapathy.jpg"
+width = "450"
+height = "301"
+thumbpath = "Dr. C.N.Ashwathnarayan & Mr. Shiva Ganapathy.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Kadri Gopalnath.jpg"
+width = "450"
+height = "301"
+thumbpath = "Kadri Gopalnath.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Kadri Gopalnath1.jpg"
+width = "450"
+height = "301"
+thumbpath = "Kadri Gopalnath1.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Kadri Gopalnath2.jpg"
+width = "450"
+height = "301"
+thumbpath = "Kadri Gopalnath2.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Mr. Shiva Ganapathy, COO, Idea Cellular.jpg"
+width = "450"
+height = "301"
+thumbpath = "Mr. Shiva Ganapathy, COO, Idea Cellular.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Mrs. Sarala Unnikrishnan & audience.jpg"
+width = "450"
+height = "301"
+thumbpath = "Mrs. Sarala Unnikrishnan & audience.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Ranjana Gauhar.jpg"
+width = "301"
+height = "450"
+thumbpath = "Ranjana Gauhar.jpg"
+thumbwidth = "50"
+thumbheight = "75">
+</image>
+
+
+<image
+path = "Ranjana Gauhar group1.jpg"
+width = "450"
+height = "301"
+thumbpath = "Ranjana Gauhar group1.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Ranjana Gauhar group2.jpg"
+width = "450"
+height = "301"
+thumbpath = "Ranjana Gauhar group2.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+</images>
+</gallery>

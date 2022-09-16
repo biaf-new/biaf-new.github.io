@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bengaluru International Arts Festival</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6PngFix.js" ></script>
+<![endif]-->  
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.js"></script>
+<script type="text/javascript" src="js/jquery.functions.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {	
+
+
+  //Get all the LI from the #tabMenu UL
+  $('#tabMenu > li').click(function(){
+        
+    //remove the selected class from all LI    
+    $('#tabMenu > li').removeClass('selected');
+    
+    //Reassign the LI
+    $(this).addClass('selected');
+    
+    //Hide all the DIV in .boxBody
+    $('.boxBody div').slideUp('1500');
+    
+    //Look for the right DIV in boxBody according to the Navigation UL index, therefore, the arrangement is very important.
+    $('.boxBody div:eq(' + $('#tabMenu > li').index(this) + ')').slideDown('1500');
+    
+  }).mouseover(function() {
+
+    //Add and remove class, Personally I dont think this is the right way to do it, anyone please suggest    
+    $(this).addClass('mouseover');
+    $(this).removeClass('mouseout');   
+    
+  }).mouseout(function() {
+    
+    //Add and remove class
+    $(this).addClass('mouseout');
+    $(this).removeClass('mouseover');    
+    
+  });
+
+  //Mouseover with animate Effect for Category menu list
+  $('.boxBody #category li').mouseover(function() {
+
+    //Change background color and animate the padding
+    $(this).css('backgroundColor','#888');
+    $(this).children().animate({paddingLeft:"20px"}, {queue:false, duration:300});
+  }).mouseout(function() {
+    
+    //Change background color and animate the padding
+    $(this).css('backgroundColor','');
+    $(this).children().animate({paddingLeft:"0"}, {queue:false, duration:300});
+  });  
+	
+  //Mouseover effect for Posts, Comments, Famous Posts and Random Posts menu list.
+  $('.boxBody li').click(function(){
+    window.location = $(this).find("a").attr("href");
+  }).mouseover(function() {
+    $(this).css('backgroundColor','#888');
+  }).mouseout(function() {
+    $(this).css('backgroundColor','');
+  });  	
+	
+});
+
+</script>
+</head>
+<body>
+<div id="main-container">
+  <div id="main-area">
+    		<div id="topmenu-area"><!--start topmenu-area-->
+					
+					<div class="top_rgt">
+						 <ul>
+							<li class="contactus"></li>
+
+					  </ul>
+						  <div class="search">
+							<form action="" class="enter">
+							  <input type="text" class="searchbtn" value="SEARCH CLUBNIGHTS"  onfocus="if(this.value == 'SEARCH CLUBNIGHTS')                                      this.value = ''"    onblur= "if(this.value == '') this.value = 'SEARCH CLUBNIGHTS'" />
+		
+							</form>
+						  </div>
+					 </div>
+    		</div><!--end topmenu-area-->
+			<div class="logo_area"><!--start logo_area-->
+
+	 			 <div id="logo"></div>
+         <div id="menu-area">
+					 <ul>
+						 <li class="home"><a href="index.html" target="_parent">HOME</a></li>
+						 <li class="aboutus"><a href="ClubNights-Events.html" target="_parent">EVENTS</a></li>
+						 <li class="music"><a href="ClubNights-Music.html" class="active" target="_parent">MUSIC</a></li>
+						 <li class="gallery"><a href="ClubNights-Gallery.html" target="_parent">GALLERY</a></li>
+
+						 <li class="thenews"><a href="ClubNights-News.html" target="_parent">NEWS</a></li>
+						 <li class="blog"><a href="ClubNights-Blog.html" target="_parent">BLOG</a></li>
+					   </ul>
+                 </div>
+			</div><!--end logo_area-->
+             <div id="siteContent"><!--start siteContent-->
+             
+               <div id="leftContent"><!--start leftContent-->
+               
+			   					<div class="box">
+
+                    <ul id="tabMenu">
+                      <li class="musicTab selected"><!----></li>
+                      <li class="musicgig"><!----></li>
+                      <li class="musicclubgallery"><!----></li>
+                    </ul>
+                    <div class="boxTop"><!----></div>
+                    
+                    <div class="boxBody">
+                      
+                      <div id="event" class="show1"> 
+                            <span class="pdctCatelog">
+
+								<img src="images/deadmau_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Deadmau / </strong>
+								<small>Ghosts ‘n Stuff</small>
+								<a href="" class="startBtn"><img src="images/star.gif"  alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+							<span class="pdctCatelog">
+								<img src="images/jack_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Jack Beats /</strong> 
+								<small>UFO</small>
+
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span> 
+							 <span class="pdctCatelog">
+								<img src="images/justice_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Justice / </strong>
+								<small>Phantom II</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>  
+							 <span class="pdctCatelog">
+
+								<img src="images/basemant_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Basement Jaxx / </strong>
+								<small>Raindrops</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>  
+							 <span class="pdctCatelog">
+								<img src="images/phoenix_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Phoenix / </strong>
+								<small>Lisztomania</small>
+
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+							<span class="pdctCatelog">
+								<img src="images/david_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>David Guetta / </strong>
+								<small>Sexy Bitch</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>   
+							                                         
+                      </div>  
+                      
+                      <div id="gig" class="midList">
+
+                           <span class="pdctCatelog">
+								<img src="images/deadmau_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Deadmau / </strong>
+								<small>Ghosts ‘n Stuff</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+							<span class="pdctCatelog">
+								<img src="images/jack_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Jack Beats /</strong> 
+								<small>UFO</small>
+
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span> 
+							 <span class="pdctCatelog">
+								<img src="images/justice_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Justice / </strong>
+								<small>Phantom II</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>  
+							 <span class="pdctCatelog">
+
+								<img src="images/basemant_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Basement Jaxx / </strong>
+								<small>Raindrops</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>  
+							 <span class="pdctCatelog">
+								<img src="images/phoenix_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Phoenix / </strong>
+								<small>Lisztomania</small>
+
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+							<span class="pdctCatelog">
+								<img src="images/david_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>David Guetta / </strong>
+								<small>Sexy Bitch</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+
+                                 <span class="pdctCatelog">
+								<img src="images/deadmau_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Deadmau / </strong>
+								<small>Ghosts ‘n Stuff</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+							<span class="pdctCatelog">
+								<img src="images/jack_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Jack Beats /</strong> 
+								<small>UFO</small>
+
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span> 
+							 <span class="pdctCatelog">
+								<img src="images/justice_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Justice / </strong>
+								<small>Phantom II</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>  
+							 <span class="pdctCatelog">
+
+								<img src="images/basemant_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Basement Jaxx / </strong>
+								<small>Raindrops</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>  
+							
+							
+                      </div>
+                      
+                      <div id="clubgallery" class="show3">
+                     		<span class="pdctCatelog">
+								<img src="images/deadmau_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Deadmau / </strong>
+
+								<small>Ghosts ‘n Stuff</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+							<span class="pdctCatelog">
+								<img src="images/jack_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Jack Beats /</strong> 
+								<small>UFO</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span> 
+							 <span class="pdctCatelog">
+
+								<img src="images/justice_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Justice / </strong>
+								<small>Phantom II</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>  
+							 <span class="pdctCatelog">
+								<img src="images/basemant_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Basement Jaxx / </strong>
+								<small>Raindrops</small>
+
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>  
+							 <span class="pdctCatelog">
+								<img src="images/phoenix_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>Phoenix / </strong>
+								<small>Lisztomania</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+							<span class="pdctCatelog">
+
+								<img src="images/david_img.gif" alt="" height="89" width="89" align="left" /> 
+								<label><strong>David Guetta / </strong>
+								<small>Sexy Bitch</small>
+								<a href="" class="startBtn"><img src="images/star.gif" alt="" width="91" height="16" /></a> 
+								<a href="" class="ratedBtn"></a></label> </span>
+                      </div>
+                      
+                    
+                         
+                    
+                    </div>
+                    
+                    <div class="boxBottom"></div>
+
+                    
+                    </div>
+			   </div><!--end leftContent-->
+                                    
+                                    <div id="rightContent">
+                            		
+                                        <div class="sponsors">
+                                                <div class="logosall">
+                                                	 <ul>
+                                                	 <li><a href="#"><img src="images/sponsors1.jpg" width="67" height="67" alt="Sponsor 1" /></a></li>
+                                                    
+                                                    <li><a href="#"><img src="images/sponsors2.jpg" width="67" height="67" alt="Sponsor 2" /></a></li>
+                                                    
+                                                    <li><a href="#"><img src="images/sponsors3.jpg" width="67" height="67" alt="Sponsor 3" /></a></li>
+
+                                                    
+                                                     <li><a href="#"><img src="images/sponsors4.jpg" width="67" height="67" alt="Sponsor 4" /></a></li>
+                                                     </ul>
+                                                </div>
+                                        </div>
+										
+										<div id="latestNews_box"><!--start latestNews_box-->
+											<div class="latest_bg"><div class="latest_top"><div class="latest_btm">
+												<div class="content_latestNews_box"><!--start content_latestNews_box-->
+													<h2 class="cont_latest"><span class="hide">LATESTNEWS</span></h2>
+
+													<div class="relaunce"><!--start relaunce-->
+														<div class="relaunceLFT"><!--start relaunceLFT-->
+															<label>16</label>
+															<span>JUL</span>
+														</div><!--start relaunceLFT-->
+														<div class="relaunceRGT"><!--start relaunceRGT-->
+															<strong>Pacha Relaunch</strong>
+
+															<span>London, UK</span>
+															<p>Tempor incididunt ut labore et dolore magna<br /> aliqua ut enim ad minim veniam. </p>
+															<a href="#" title="Read More">Read More ></a>
+														</div><!--end relaunceRGT-->
+													</div><!--end relaunce-->
+													<div class="relaunce"><!--start relaunce-->
+
+														<div class="relaunceLFT"><!--start relaunceLFT-->
+															<label>11</label>
+															<span>JUL</span>
+														</div><!--start relaunceLFT-->
+														<div class="relaunceRGT"><!--start relaunceRGT-->
+															<strong>DJ Shadow Confirms UK Tour</strong>
+															<span>London, UK</span>
+
+															<p>
+																Sed ut perspiciatis unde omnis iste natus error sit
+																 voluptatem accusantium doloremque laudantium.
+															</p>
+															<a href="#" title="Read More">Read More ></a>
+														</div><!--end relaunceRGT-->
+													</div><!--end relaunce-->
+													<div class="relaunce"><!--start relaunce-->
+														<div class="relaunceLFT"><!--start relaunceLFT-->
+															<label>09</label>
+
+															<span>JUL</span>
+														</div><!--start relaunceLFT-->
+														<div class="relaunceRGT"><!--start relaunceRGT-->
+															<strong>KISS FM Live in Ibiza</strong>
+															<span>Ibiza, Spain</span>
+															<p>Tempor incididunt ut labore et dolore magna<br /> aliqua ut enim ad minim veniam. </p>
+
+															<a href="#" title="Read More">Read More ></a>
+														</div><!--end relaunceRGT-->
+													</div><!--end relaunce-->
+												</div><!--end content_latestNews_box-->
+											</div></div></div>
+										</div><!--end latestNews_box-->
+                          </div>
+                          
+                        </div><!--end siteContent-->
+
+                        
+  		
+        
+    </div>   
+          
+</div>
+<div class="footer">
+	<div id="cont_footer"><!--start cont_footer-->
+		<div class="cont_footer_top"><!--start cont_footer_top-->
+			<div class="footer_mainCont"><!--start footer_mainCont-->
+				<div class="all_link_footer"><!--start all_link_footer-->
+					<ul class="all_link_footer01">
+						<li class="Competitions"><a href="#" title="Competitions">Competitions</a></li>
+
+						<li><a href="#" title="Current Competitions">Current Competitions</a></li>
+						<li><a href="#" title="Competition Rules">Competition Rules</a></li>
+					</ul>
+					<ul class="all_link_footer02">
+						<li class="Competitions"><a href="#" title="Music">Music</a></li>
+						<li><a href="#" title="New Music">New Music</a></li>
+						<li><a href="#" title="Charts">Charts</a></li>
+
+						<li><a href="#" title="Music Queries">Music Queries</a></li>
+					</ul>
+					<ul class="all_link_footer03">
+						<li class="Competitions"><a href="#" title="Gigs &amp; Events">Gigs &amp; Events</a></li>
+						<li><a href="#" title="Latest Events">Latest Events</a></li>
+						<li><a href="#" title="Gig Guide">Gig Guide</a></li>
+
+						<li><a href="#" title="Submit A Gig">Submit A Gig</a></li>
+					</ul>
+					<ul class="all_link_footer04">
+						<li class="Competitions"><a href="#" title="Blog">Blog</a></li>
+						<li><a href="#" title="Latest Posts">Latest Posts</a></li>
+					</ul>
+					<ul class="all_link_footer05">
+
+						<li class="Competitions"><a href="#" title="Sitemap">Sitemap</a></li>
+						<li><a href="#" title="Help Getting Around">Help Getting Around</a></li>
+					</ul>
+				</div><!--end all_link_footer-->
+				<div class="sub_menu_footer">
+					<ul>
+						 <li class="home"><a href="index.html"  class="active" target="_parent">HOME</a></li>
+                  <li class="aboutus"><a href="AboutUs.html" target="_parent">ABOUT US</a></li>
+                  <li class="music"><a href="Schedule.html" target="_parent">SCHEDULE</a></li>
+                  <li class="gallery"><a href="Artists.html" target="_parent">ARTISTS</a></li>
+                  <li class="thenews"><a href="Advisoryboard.html" target="_parent">ADVISORY BOARD</a></li>
+                  <li class="thenews"><a href="Gallery.html" target="_parent">GALLERY</a></li>
+                 <li class="thenews"><a href="Gallery.html" target="_parent">PAST EVENTS</a></li>
+               <li class="blog"><a href="#" target="_parent">BLOG</a></li>
+
+					</ul>  
+				</div>
+			</div><!--end footer_mainCont-->
+		</div>
+		<!--end cont_footer_top-->
+		<div id="foooter_low">
+			<div class="txt_ftr_low">© Bengaluru International Arts Festival</div>
+			<div class="foooter_low_rgt">
+				<ul>
+
+				<li><a href="#" title="Digg" class="pic01">Digg</a></li>
+				<li><a href="#" title="Delicious" class="pic02">Delicious</a></li>
+				<li><a href="#" title="Facebook" class="pic03">Facebook</a></li>
+				<li><a href="#" title="reddit" class="pic04">reddit</a></li>
+                </ul>
+			</div>
+		</div>
+
+	</div><!--end cont_footer-->
+</div>    
+
+</body>
+</html>
+<!-- 69f91df138d3f3beb5fd60e43358cdb9 -->

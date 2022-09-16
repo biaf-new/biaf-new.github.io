@@ -1,0 +1,239 @@
+<HTML>
+<head>
+	<TITLE>Bangaluru International Art Festival</TITLE>
+	<META name="generator" content="Adobe Photoshop(R) CS Web Photo Gallery">
+	<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="images/galleryStyle.css" rel="stylesheet" type="text/css">
+	<script language="javascript">
+	<!--
+	
+	var feedback = new Object();
+	var tabShowing = null;
+	
+	function showTab() {
+		if (tabShowing != null && tabShowing.toLowerCase() == "info") {
+			
+			top.TopFrame.CSAction(new Array(/*CMP*/'BAE16A9A0',/*CMP*/'BAE16AA81'));return top.TopFrame.CSClickReturn();
+		
+		} else if (tabShowing != null && tabShowing.toLowerCase() == "feedback") {
+
+			top.TopFrame.CSAction(new Array(/*CMP*/'BAE16AB52',/*CMP*/'BAE16ABF3'));return top.TopFrame.CSClickReturn();		
+		}
+	}
+	
+	function updateFeedback(picName) {
+		
+		if (feedback[picName]) {
+			
+			top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value = feedback[picName].comments;
+		
+			top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked = feedback[picName].approved;
+		
+			top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked = feedback[picName].other;
+			
+			top.TopFrame.document.images["saved"].src = "../images/saved.gif";
+		}
+	}
+	
+	function addComment(picName) {
+		feedback[picName] = new Object();
+		
+		feedback[picName].comments = top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value;
+		
+		feedback[picName].approved = top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked ? true : false;
+		
+		feedback[picName].other = top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked ? true : false;
+		
+		top.TopFrame.document.images["saved"].src = "../images/saved.gif";
+	}
+	
+	function removeFeedback(picName) {
+		//Make sure there is feedback to remove
+		if (!(top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value == ""
+			&& top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked == false
+			&& top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked == false)) {
+			if (confirm("Are you sure you want to remove feedback on this image?")) {
+				delete feedback[picName];
+				
+				top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value = "";
+			
+				top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked = false;
+			
+				top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked = false;
+				
+				top.TopFrame.document.images["saved"].src = "../images/spacer.gif";
+			}
+		}
+	}
+	
+	function sendFeedback(picName) {
+		checkForUnSavedChanges(picName);
+
+		var prefix = "mailto:?";
+		var name = null;
+		name = prompt("Enter Your Name:", "Your Name");
+		
+		if (name) {
+			prefix += "subject=" + escape("Feedback from " + name);
+			prefix += "&body=";
+			var str = ""
+			
+			for (var i in feedback) {
+				
+				str += i + " ~~ \n";
+				str += (feedback[i].approved == true) ? "Approved ~~ \n" : "";
+				str += (feedback[i].other == true) ? "Other ~~ \n" : "";
+				str += (feedback[i].comments != "") ? ("\nComments:\n" + feedback[i].comments + " ~~ \n") : "";
+				str += "____________________________________________\n\n";
+			
+			}
+			
+			str = escape(str);
+			location.href = prefix + str;
+		}	
+	}
+	
+	function setAsUnsaved() {
+		top.TopFrame.document.images["saved"].src = "../images/spacer.gif";
+	}
+	
+	function checkForUnSavedChanges(picName) {
+		
+		var unsavedChanges = false;
+		
+		if ((top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value != "" && !feedback[picName]) 
+			|| (feedback[picName] && feedback[picName].comments != top.TopFrame.document.forms["wpgFeedback"].elements["comments"].value)) {
+			unsavedChanges = true;
+		} else if ((top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked != false && !feedback[picName]) 
+					|| (feedback[picName] && feedback[picName].approved != top.TopFrame.document.forms["wpgFeedback"].elements["approved"].checked)) {
+			unsavedChanges = true;
+		} else if ((top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked != false && !feedback[picName]) 
+					|| (feedback[picName] && feedback[picName].other != top.TopFrame.document.forms["wpgFeedback"].elements["other"].checked)) {
+			unsavedChanges = true;
+		}		
+		
+		if (unsavedChanges) {
+			//Uncomment if auto-saving is not desired.
+			//if (confirm("There is unsaved feedback for this image. Would you like to save it?")) {
+				addComment(picName);
+			//}
+		}
+	}
+	//-->
+	</script>
+</head>
+<body bgcolor="#CCCCCC" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+	<div id="thumbnail">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">			
+<!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Audience 2.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Audience%202.html" target="TopFrame"><img src="thumbnails/1.jpg" alt="Audience 2" width="82" height="73"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Audience%202.html" target="TopFrame">12-09-14 Vivekananda Road Metro Station, Old Madras Rd  - “Laya Nada Taranga” by Sri Saraswathi V</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Audience 3.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Audience%203.html" target="TopFrame"><img src="thumbnails/2.jpg" alt="Audience 3" width="83" height="75"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Audience%203.html" target="TopFrame">12-09-14 Vivekananda Road Metro Station, Old Madras Rd & Boulevard, M G Road Metro Station, Aayan</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Deepti Sudhindra 1.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Deepti%20Sudhindra%201.html" target="TopFrame"><img src="thumbnails/3.jpg" alt="Deepti Sudhindra 1" width="86" height="83"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Deepti%20Sudhindra%201.html" target="TopFrame">13-09-14 Boulevard, M G Road Metro Station - Aayana Dance Company - RoadMele  </a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Deepti Sudhindra 2.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Deepti%20Sudhindra%202.html" target="TopFrame"><img src="thumbnails/4.jpg" alt="Deepti Sudhindra 2" width="94" height="78"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Deepti%20Sudhindra%202.html" target="TopFrame">13-09-14 Boulevard, M G Road Metro Station - Gotipua - Odissa Dance Academy </a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Deepti Sudhindra 4.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Deepti%20Sudhindra%204.html" target="TopFrame"><img src="thumbnails/5.jpg" alt="Deepti Sudhindra 4" width="97" height="71"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Deepti%20Sudhindra%204.html" target="TopFrame">13-09-14 Boulevard, M G Road Metro Station - Gotipua - Odissa Dance Academy</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Deepti Sudhindra 6.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Deepti%20Sudhindra%206.html" target="TopFrame"><img src="thumbnails/7.jpg" alt="Deepti Sudhindra 6" width="97" height="78"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Deepti%20Sudhindra%206.html" target="TopFrame">13-09-14 Boulevard, M G Road Metro Station - Gotipua - Odissa Dance Academy </a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Deepti Sudhindra 8.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Deepti%20Sudhindra%208.html" target="TopFrame"><img src="thumbnails/8.jpg" alt="Deepti Sudhindra 8" width="95" height="91"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Deepti%20Sudhindra%208.html" target="TopFrame">13-09-14 Boulevard, M G Road Metro Station - Gotipua - Odissa Dance Academy1 </a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Mrs.Veena Murthy Vijay &amp; Guru Sri.M.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Mrs.Veena%20Murthy%20Vijay%20%26%20Guru%20Sri.M.html" target="TopFrame"><img src="thumbnails/9.jpg" alt="Mrs.Veena Murthy Vijay &amp; Guru Sri.M" width="100" height="92"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Mrs.Veena%20Murthy%20Vijay%20%26%20Guru%20Sri.M.html" target="TopFrame">13-09-14 Boulevard, M G Road Metro Station - Gotipua - Odissa Dance Academy1 </a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Padmini Ravi &amp; Deepti Sudhindra.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Padmini%20Ravi%20%26%20Deepti%20Sudhindra.html" target="TopFrame"><img src="thumbnails/10.jpg" alt="Padmini Ravi &amp; Deepti Sudhindra" width="101" height="80"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Padmini%20Ravi%20%26%20Deepti%20Sudhindra.html" target="TopFrame">13-09-14 Boulevard, M G Road Metro Station - Gotipua - Odissa Dance Academy1 </a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Smt.Padmashree Aruna Sairam 1.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Smt.Padmashree%20Aruna%20Sairam%201.html" target="TopFrame"><img src="thumbnails/12.jpg" alt="Smt.Padmashree Aruna Sairam 1" width="104" height="79"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Smt.Padmashree%20Aruna%20Sairam%201.html" target="TopFrame">14-09-14 Boulevard, M G Road Metrop Station, Aathma</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="2"><a onMouseOver="window.status='Smt.Padmashree Aruna Sairam 2.jpg';  return true;"  onmouseout="window.status='';  return true;" href="pages/Smt.Padmashree%20Aruna%20Sairam%202.html" target="TopFrame"><img src="thumbnails/13.jpg" alt="Smt.Padmashree Aruna Sairam 2" width="106" height="94"   border=1></a></td>
+    <td width="100%" valign="top"><div class="indexInfo"><div class="filename"><a href="pages/Smt.Padmashree%20Aruna%20Sairam%202.html" target="TopFrame">14-09-14 Boulevard, M G Road Metrop Station, Aathma1</a></div><div class="date"></div></div></td>
+  </tr>
+</table>
+<div></td></tr><!-- Thumbnails with hyperlinks -->
+<tr><td align="center">
+<div class="indexContent">
+
+ 
+<div></td></tr>		</table>
+	</div>
+</BODY>
+</HTML>

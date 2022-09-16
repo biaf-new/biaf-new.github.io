@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bengaluru International Arts Festival</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6PngFix.js" ></script>
+<![endif]-->  
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.js"></script>
+<script type="text/javascript" src="js/jquery.functions.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.club_img a').lightBox();
+});
+</script>
+<script type="text/javascript">
+
+$(document).ready(function() {	
+
+
+  //Get all the LI from the #tabMenu UL
+  $('#tabMenu > li').click(function(){
+        
+    //remove the selected class from all LI    
+    $('#tabMenu > li').removeClass('selected');
+    
+    //Reassign the LI
+    $(this).addClass('selected');
+    
+    //Hide all the DIV in .boxBody
+    $('.boxBody div').slideUp('1500');
+    
+    //Look for the right DIV in boxBody according to the Navigation UL index, therefore, the arrangement is very important.
+    $('.boxBody div:eq(' + $('#tabMenu > li').index(this) + ')').slideDown('1500');
+    
+  }).mouseover(function() {
+
+    //Add and remove class, Personally I dont think this is the right way to do it, anyone please suggest    
+    $(this).addClass('mouseover');
+    $(this).removeClass('mouseout');   
+    
+  }).mouseout(function() {
+    
+    //Add and remove class
+    $(this).addClass('mouseout');
+    $(this).removeClass('mouseover');    
+    
+  });
+
+  //Mouseover with animate Effect for Category menu list
+  $('.boxBody #category li').mouseover(function() {
+
+    //Change background color and animate the padding
+    $(this).css('backgroundColor','#888');
+    $(this).children().animate({paddingLeft:"20px"}, {queue:false, duration:300});
+  }).mouseout(function() {
+    
+    //Change background color and animate the padding
+    $(this).css('backgroundColor','');
+    $(this).children().animate({paddingLeft:"0"}, {queue:false, duration:300});
+  });  
+	
+  //Mouseover effect for Posts, Comments, Famous Posts and Random Posts menu list.
+  $('.boxBody li').click(function(){
+    window.location = $(this).find("a").attr("href");
+  }).mouseover(function() {
+    $(this).css('backgroundColor','#888');
+  }).mouseout(function() {
+    $(this).css('backgroundColor','');
+  });  	
+	
+});
+
+</script>
+<style type="text/css">
+<!--
+.style1 {font-weight: bold}
+.style2 {font-size: 14px}
+-->
+</style>
+</head>
+<body>
+<div id="main-container">
+  <div id="main-area">
+    		<div id="topmenu-area"><!--start topmenu-area-->
+					
+					<div class="top_rgt">
+
+						 <ul>
+							<li class="contactus"><a href="Contact.html" target="_parent"></a></li>
+						  </ul>
+						  <div class="search">
+							<form action="" class="enter">
+							  <input type="text" class="searchbtn" value="SEARCH"  onfocus="if(this.value == 'SEARCH CLUBNIGHTS')                                      this.value = ''"    onblur= "if(this.value == '') this.value = 'SEARCH CLUBNIGHTS'" />
+		
+							</form>
+						  </div>
+
+					 </div>
+    		</div><!--end topmenu-area-->
+			<div class="logo_area"><!--start logo_area-->
+	 			
+               <div id="menu-area">
+                <ul class="style1">
+                  <li class="home"><a href="index.html"   target="_parent">HOME</a></li>
+                  <li class="aboutus"><a href="AboutUs.html" target="_parent" >ABOUT US</a></li>
+                  <li class="music"><a href="Schedule.html" target="_parent">SCHEDULE</a></li>
+                  <li class="gallery"><a href="Artists.html" target="_parent">ARTISTS</a></li>
+                  <li class="thenews"><a href="Advisoryboard.html" target="_parent">ADVISORY BOARD</a></li>
+                   <li class="thenews"><a href="team.html" target="_parent" ><strong>TEAM</strong></a></li>
+                  <li class="thenews"><a href="currentevents2.html" target="_parent" class="active"><strong>CURRENT EVENTS</strong></a></li>
+               <!--   <li class="thenews"><a href="Gallery.html" target="_parent">GALLERY</a></li>-->
+                    <li class="thenews"><a href="PastEvents.html" target="_parent">PAST EVENTS</a></li>
+                    <li class="thenews"><strong><a href="Contact.html" target="_parent">CONTACT US</a></strong></li>
+                 <li class="blog"><a href="Blog.html" target="_parent"><strong>BLOG</strong></a></li>
+                </ul>
+              </div>
+	</div><!--end logo_area-->
+
+             <div id="siteContent"><!--start siteContent-->
+               <div id="leftContent"><!--start leftContent-->
+			   		<div id="con_contLft"><!--start con_contLft-->
+						<div class="con_banner"><img src="images/abt1.JPG" alt="" width="546" height="164" /></div>
+<div class="remain_cont_Lft"><!--start remain_cont_Lft-->
+							<div class="link_row_contPage">
+								<ul>
+
+									<li><a href="#" title="Home">Home</a></li>
+									<li class="cont_select"><a href="#" title="Events">>Current Events</a>
+								
+								</li>
+								</ul>
+					</div>
+							<h3>Click Here For Current Events</h3><br />
+	        
+							<div class="event_cont" style="width: 539px; height: 350px"><!--start event_cont-->
+
+					 		  <p><a href="currentevents-imgs/ps/index.html" target="_blank" class="style2">Chowdiah Memorial Hall</a><a href="currentevents-imgs/ps/index.html" target="_blank">, 05.09.2014</a> <br />
+					 		    <a href="currentevents-imgs/ps1/index.html" target="_blank" class="style2">National Gallery of modern arts </a><a href="currentevents-imgs/ps/index.html" target="_blank">, 06.09.2014</a> <br />
+								 		  
+					 		    <a href="currentevents-imgs/ps2/index.html" target="_blank" class="style2">Chowdiah Memorial Hall</a><a href="currentevents-imgs/ps1/index.html" target="_blank">, 19.09.2014</a><br />
+							 		      
+				 		        <a href="currentevents-imgs/ps3/index.html" target="_blank" class="style2">Chowdiah Memorial Hall</a><a href="currentevents-imgs/ps2/index.html" target="_blank">, 20.09.2014</a><br />
+			 		                  
+ 		                        <a href="currentevents-imgs/ps5/index.html" target="_blank" class="style2">
+							    Chowdiah Memorial Hall , 21.09.2014</font></a><br />
+										<a href="currentevents-imgs/ps14/index.html" class="style2">Metro station ,  12.09.2014 </a><br /> 
+										<a href="currentevents-imgs/ps14/index.html" class="style2">Metro station, 13.09.2014</a><br />
+										<a href="currentevents-imgs/ps14/index.html" class="style2">Metro station  , 14.09.2014</a><br /> 
+										<a href="#" class="style2">National gallery  of modern art,49 palace road,Manikyavelu Mansion , 06.09.2014</a><br /> 
+										<a href="#" class="style2">National gallery  of modern art,49 palace road,Manikyavelu Mansion, Whitefield , 07.09.2014 </a><br /> 
+							            <a href="currentevents-imgs/ps15/index.html" class="style2">MLR convention centre Brigade Millen 7th phase,J.P.Nager , 13.09.2014                             </a><br /> 
+					            <a href="currentevents-imgs/ps15/index.html" class="style2">MLR convention centre Brigade Millen 7th phase,J.P.Nager , 14.09.2014                          </a><br /> 
+					            <a href="currentevents-imgs/ps16/index.html" class="style2">Freedom park, opposite to Maharani college,Seshadri road, 13.09.2014                           </a> <br /> 
+          <a href="currentevents-imgs/ps16/index.html" class="style2">Freedom park, opposite to Maharani college,Seshadri road, 14.09.2014,</a></div>
+          <!--end blog_cont-->
+		  </div>
+<!--end remain_cont_Lft-->
+					</div><!--end con_contLft-->
+			   </div><!--end leftContent-->
+			   <div id="rightContent">
+                 <div class="Logo"></div>
+			     <div class="sponsors">
+                   <div>
+                     <!--   <p><img border="0" src="images/sponsorors/rs/image001.jpg" width="53" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/Idea-Logo-.jpg" width="36" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/iccrlogo2.jpg" width="50" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/19Academy%20of%20Music.jpg" width="78" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/15Sathya.jpg" width="54" height="34" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/OPUS.jpg" width="56" height="34" style="border: 1px solid #C0C0C0"></p>
+                                                  <p><img border="0" src="images/sponsorors/rs/05Ministry%20of%20Cultural.jpg" width="77" height="36" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/04HDFC.jpg" width="45" height="36" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/03Sangeet%20Natak.jpg" width="70" height="36" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/01BBMP.jpg" width="79" height="36" style="border: 1px solid #C0C0C0"><img border="0" src="images/sponsorors/rs/logo%20copy.jpg" width="58" height="36" style="border: 1px solid #C0C0C0"></p>-->
+                     <img src="images/sponsorors/footer111.jpg" width="347" height="84"/> </div>
+		         </div>
+			     <!--end news_club_box-->
+                 <div class="latestNews_box">
+                   <!--start latestNews_box-->
+                   <div class="latest_bg">
+                     <div class="latest_top">
+                       <div class="latest_btm">
+                         <div class="content_latestNews_box">
+                           <!--start content_latestNews_box-->
+                           <h2 class="cont_latest"><span class="hide">LATESTNEWS</span></h2>
+                           <div class="relaunce">
+                             <!--start relaunce-->
+                             <div class="relaunceLFT">
+                               <!--start relaunceLFT-->
+                               <label>BIAF</label>
+                               <span>2014</span> </div>
+                             <!--start relaunceLFT-->
+                             <div class="relaunceRGT">
+                               <!--start relaunceRGT-->
+                               <strong>BIAF is seeking support from:</strong> <span>Our aim is to make ‘Your sponsorship is an Investment, not a Donation’</span>
+                               <p>&quot;For the true artist, the last issue is money. The artist’s currency is creativity, emotion and imagination. For business, currency is currency, the bottom line. Business generates wealth and jobs that build community. Arts generate passion and ideas that define the ‘Community’. Artists need wealth and jobs. Business needs passion and ideas. A healthy community needs both.&quot; </p>
+                             </div>
+                             <!--end relaunceRGT-->
+                           </div>
+                           <!--end relaunce-->
+                           <!--end relaunce-->
+                           <!--end relaunce-->
+                           <!--end relaunce-->
+                         </div>
+                         <!--end content_latestNews_box-->
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+			     <!--end latestNews_box-->
+               </div>
+			   <!--end siteContent-->
+                        
+  		
+        
+    </div>   
+          
+</div>
+
+<div class="footer">
+	<div id="cont_footer"><!--start cont_footer-->
+	  <!--end cont_footer_top-->
+      <div id="foooter_low" style="width: 950px; height: 349px"> &nbsp;
+          <p><b><font size="5" color="#000000">OUR SPONSORS</font></b><a href="http://celebrityportal.in"><img src="images/sponsorors/footer.jpg" width="943" height="250" style="border: 2px solid #B95C00" /></a></p>
+        <div class="txt_ftr_low"><font color="#FFFF99">Designed and Developed by 
+			</font> <span class="style10"><a href="http://www.celebrityportal.in">
+			<font color="#FFFF99">celebrityportal.in</font></a></span><font color="#FFFF99"> in association with</font><a href="http://www.bcstech.in"><font color="#FFFF99"> www.bcstech.in</font></a></div>
+  <div class="foooter_low_rgt">
+            <ul>
+              <li><a href="#" title="Facebook" class="pic03">Face book</a></li>
+              <li><a href="#" title="reddit" class="pic04">reddit</a></li>
+            </ul>
+        </div>
+      </div>
+  </div>
+</div>    
+
+</body>
+</html>
+<!-- 69f91df138d3f3beb5fd60e43358cdb9 -->

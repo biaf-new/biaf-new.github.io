@@ -1,0 +1,45 @@
+<gallery
+base = ""
+background = "#FFFFFF"
+banner = "#FFFFFF"
+text = "#000000"
+link = "#0000FF"
+alink = "#FF0000"
+vlink = "#800080"
+date = "9/21/2012">
+	<sitename>BIAF - 14 Sep 2012, Opus, Palace Cross</sitename>
+	<photographer></photographer>
+	<contactinfo></contactinfo>
+	<email></email>
+	<security><![CDATA[]]> </security>
+
+<banner font = "Arial" fontsize = "3" color =  "#FFFFFF"> </banner>
+<thumbnail base ="thumbnails/" font = "Arial" fontsize = "4" color = "#FFFFFF" border = "1" rows = "3" col = "5"> </thumbnail> 
+<large base ="images/" font = "Arial" fontsize = "3" color = "#FFFFFF" border = "1"> </large>
+<images id = "images">
+
+<image
+path = "Karthik Mani.jpg"
+thumbpath = "Karthik Mani.jpg"
+</image>
+
+
+<image
+path = "Nepal to Bangalore Express.jpg"
+thumbpath = "Nepal to Bangalore Express.jpg"
+</image>
+
+
+<image
+path = "Nepal to Bangalore Express 1.jpg"
+thumbpath = "Nepal to Bangalore Express 1.jpg"
+</image>
+
+
+<image
+path = "Radha Thomas & Aman Mahajan.jpg"
+thumbpath = "Radha Thomas & Aman Mahajan.jpg"
+</image>
+
+</images>
+</gallery>

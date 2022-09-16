@@ -1,0 +1,81 @@
+<gallery
+base = ""
+background = "#FFFFFF"
+banner = "#F0F0F0"
+text = "#000000"
+link = "#0000FF"
+alink = "#FF0000"
+vlink = "#800080"
+date = "">
+	<sitename>BIAF -  UB City on 08 Sep 2012</sitename>
+	<photographer></photographer>
+	<contactinfo></contactinfo>
+	<email></email>
+	<security><![CDATA[]]> </security>
+
+<banner font = "Arial" fontsize = "3" color =  "#F0F0F0"> </banner>
+<thumbnail base ="thumbnails/" font = "Arial" fontsize = "4" color = "#F0F0F0" border = "1" rows = "3" col = "5"> </thumbnail> 
+<large base ="images/" font = "Arial" fontsize = "3" color = "#F0F0F0" border = "1"> </large>
+<images id = "images">
+
+<image
+path = "Audience.jpg"
+width = "450"
+height = "300"
+thumbpath = "Audience.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Dr. Suma Sudhindra.jpg"
+width = "450"
+height = "300"
+thumbpath = "Dr. Suma Sudhindra.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Dr. Suma Sudhindra, Gerard Machado & Andrew Kay.jpg"
+width = "450"
+height = "300"
+thumbpath = "Dr. Suma Sudhindra, Gerard Machado & Andrew Kay.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Dr. Suma Sudhindra, Gerard Machado & Andrew Kay 1.jpg"
+width = "450"
+height = "300"
+thumbpath = "Dr. Suma Sudhindra, Gerard Machado & Andrew Kay 1.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+
+<image
+path = "Jyotsna Srikanth.jpg"
+width = "300"
+height = "450"
+thumbpath = "Jyotsna Srikanth.jpg"
+thumbwidth = "50"
+thumbheight = "75">
+</image>
+
+
+<image
+path = "Jyotsna Srikanth & Marten Wisser.jpg"
+width = "450"
+height = "300"
+thumbpath = "Jyotsna Srikanth & Marten Wisser.jpg"
+thumbwidth = "75"
+thumbheight = "50">
+</image>
+
+</images>
+</gallery>
